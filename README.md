@@ -15,6 +15,8 @@
 
 **Adopt Me** is a Single Page Application (SPA) built with React, designed to help users find and adopt pets. This application provides a seamless and interactive experience for viewing and selecting pets available for adoption.
 
+![](./readme-images/home.png)
+
 ## Installation
 
 To get a local copy up and running, follow these simple steps:
