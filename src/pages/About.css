@@ -1,0 +1,33 @@
+.aboutPage {
+  background-color: #ffffff;
+  margin: 1rem 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.aboutPage__title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.aboutPage__content {
+  margin: 0 1rem;
+}
+
+.aboutPage__introduction {
+  font-weight: 600;
+}
+.aboutPage__questions {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 70rem) {
+  .aboutPage {
+    margin: 1rem 10rem;
+  }
+  .aboutPage__content {
+    margin: 0 12rem;
+  }
+}

@@ -1,0 +1,114 @@
+.header {
+  background-color: var(--tertiary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 0;
+}
+
+.header__content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  margin-left: 1rem;
+}
+.header__menu-icon {
+  font-size: 2rem;
+}
+
+.header__togglemenu_container {
+  height: 2rem;
+  font-weight: 2rem;
+  margin-right: 2rem;
+}
+
+.header__menu-show {
+  width: 10rem;
+  border-left: 1px solid #eee;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 1rem 0.5rem;
+  height: 100vh;
+  z-index: 1;
+}
+
+.header__menu-list {
+  width: 100%;
+  list-style: none;
+  font-size: 1.2rem;
+}
+.header__menu-item {
+  margin: 1rem 0;
+  border-bottom: 1px dashed #eee;
+  padding-left: 1rem;
+}
+.toggleDarkMode__button {
+  border: none;
+  padding: 0.6rem 0.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: var(--headline-color);
+  color: var(--white);
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  width: 100%;
+}
+.darkMode .toggleDarkMode__button {
+  background-color: var(--dark-highlight);
+  color: var(--headline-color);
+}
+
+.header__menu-hide {
+  display: none;
+}
+
+@media (min-width: 55rem) {
+  .header__menu-icon {
+    display: none;
+  }
+  .header__menu-hide {
+    display: flex;
+  }
+  .header__menu-list {
+    display: flex;
+    flex-direction: row;
+  }
+  .header__menu-item {
+    border-bottom: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 2rem;
+  }
+  .toggleDarkMode__button {
+    position: relative;
+    top: 0;
+  }
+  .toggleDarkMode__button-container {
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+  }
+  .no-show {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .header__content {
+    width: 80%;
+  }
+}

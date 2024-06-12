@@ -1,0 +1,120 @@
+.eventsPage {
+  margin: 2rem 2rem;
+  text-align: center;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+.eventsPage__title {
+  margin: 1rem;
+  font-size: 1.1rem;
+}
+.carousel {
+  position: relative;
+}
+.carousel__inner {
+  width: 100%;
+}
+
+.carousel__item {
+  width: 100%;
+  height: 20rem;
+
+  position: relative;
+}
+.carousel__item-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+}
+
+.carousel__item-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+
+  width: 100%;
+  padding: 1rem 2rem;
+
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.carousel__buttons {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.carousel__button {
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0.8);
+
+  border: none;
+}
+
+.eventsCards {
+  display: flex;
+  flex-direction: column;
+
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.eventCard {
+  flex: 20%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+}
+
+.eventCard_content {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem;
+}
+
+.eventCard__image {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.eventCard__title {
+  font-size: 1.3rem;
+}
+
+.eventCard__date {
+  font-size: 1.1rem;
+  color: var(--darkgreen);
+  font-weight: bold;
+}
+.eventCard__location {
+  font-size: 1.1rem;
+  color: var(--text-secondary-color);
+}
+
+@media (min-width: 60rem) {
+  .eventsPage {
+    margin: 3rem 10rem;
+  }
+  .eventsCards {
+    flex-direction: row;
+  }
+  .eventsPage__title {
+    font-size: 2rem;
+  }
+}

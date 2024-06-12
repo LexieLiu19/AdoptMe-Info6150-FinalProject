@@ -1,0 +1,105 @@
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.app {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+  width: 100%;
+}
+
+.skiplink {
+  position: absolute;
+  background-color: #fff;
+  padding: 1rem;
+  top: 0;
+}
+
+.skiplink:focus {
+  border: 3px solid red;
+}
+
+.darkMode {
+  background-color: var(--dark-background);
+  color: var(--dark-text) f;
+}
+.darkMode .aboutPage,
+.darkMode .animals,
+.darkMode .eventsPage,
+.darkMode .main,
+.darkMode .careers {
+  background-color: var(--dark-secondary);
+}
+.darkMode header,
+.darkMode header a,
+.darkMode footer a,
+.darkMode footer {
+  background-color: var(--dark-primary);
+  color: var(--dark-text);
+}
+
+.darkMode .main section {
+  background-color: var(--dark-fourth);
+  color: #fff;
+}
+.darkMode .main section:nth-child(2n) {
+  background-color: var(--dark-tertiary);
+  color: #fff;
+}
+.darkMode h1,
+.darkMode h2,
+.darkMode h3,
+.darkMode h4,
+.darkMode h5 {
+  color: var(--dark-highlight);
+}
+
+.darkMode p,
+.darkMode ul,
+.darkMode span {
+  color: var(--dark-text);
+}
+
+.darkMode .eventCard {
+  background-color: var(--dark-fifth);
+}
+
+.darkMode .header__menu-show {
+  background-color: var(--dark-fifth);
+  border-left: var(--dark-fourth);
+  box-shadow: rgba(7, 7, 10, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.darkMode .header__menu-item {
+  border-color: var(--dark-fourth);
+}
+
+.darkMode .category {
+  background-color: var(--dark-fourth);
+}
+
+.darkMode .animals__select {
+  color: var(--dark-text);
+}
+
+.darkMode .animals__select-input {
+  color: var(--dark-text);
+  background-color: var(--dark-primary);
+}
+
+.darkMode .modal {
+  background-color: var(--dark-secondary);
+  color: var(--dark-text);
+}
+
+.darkMode .modal input,
+.darkMode .modal textarea {
+  background-color: var(--dark-fourth);
+  color: var(--dark-text);
+}
+.darkMode a:hover,
+.darkMode a span:hover {
+  color: var(--hover-color);
+}

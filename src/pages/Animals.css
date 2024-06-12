@@ -1,0 +1,157 @@
+.animals {
+  margin: 2rem 2rem;
+  padding: 1rem;
+
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+.animals__title {
+  text-align: center;
+  font-size: 1.1rem;
+}
+.animals__title p {
+  text-align: left;
+  font-size: 1rem;
+}
+
+.animals__select {
+  display: flex;
+  flex-direction: column;
+  font-size: 1, 2rem;
+  font-weight: bold;
+
+  margin: 1rem 0;
+}
+
+.animals__select-input {
+  padding: 0.5rem 0.1rem;
+}
+.animal {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 0;
+  padding-bottom: 1rem;
+
+  border-bottom: 4px dotted var(--divide-border-color);
+}
+
+.animal__image {
+  width: 100%;
+  height: 14rem;
+}
+
+.animal__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.animal__details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.animal__details-title {
+  font-size: 2rem;
+}
+
+.animal__details-tags {
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: flex-start;
+}
+.animal__details-tags span {
+  margin-right: 1rem;
+  background-color: var(--tag-blue);
+  color: var(--text-color);
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+}
+.animal__details-tags span:nth-child(2n) {
+  background-color: var(--tag-yellow);
+}
+
+.animal__details-emp {
+  font-weight: bold;
+}
+
+.animal__details-btn {
+  background-color: var(--highlight-color);
+  padding: 0.3rem 0;
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 1.3rem;
+  width: 10rem;
+  margin: 0 auto;
+}
+
+.modal {
+  max-width: 64ch;
+  padding: 2rem 4rem;
+  border: 0;
+  box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+  border-radius: 5px;
+}
+.modal::backdrop {
+  background: rgb(0 0 0 / 0.4);
+}
+
+.modal__title {
+  margin: 1rem 0 1rem 0;
+  text-align: center;
+}
+
+.modal__success {
+  text-align: center;
+}
+
+.modal__success-title {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+.modal__success-title span {
+  margin-left: 0.5rem;
+}
+.modal__success-button {
+  margin-top: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--green);
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+@media (min-width: 70rem) {
+  .animals {
+    margin: 2rem 10rem;
+  }
+  .animals__title {
+    font-size: 1.3rem;
+  }
+  .animals__title p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 2rem 10rem;
+  }
+  .animal {
+    flex-direction: row;
+  }
+  .animal__image {
+    width: 20rem;
+    height: 18rem;
+  }
+  .animal__details {
+    width: 80%;
+  }
+  .animal__details-btn {
+    margin: 0;
+  }
+  .animals__select {
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+  }
+}

@@ -1,0 +1,76 @@
+:root {
+  --main-color: #f1f1f1;
+
+  --highlight-color: #ffab03;
+  --headline-color: #272343;
+  --text-color: #2d334a;
+  --text-secondary-color: #696969;
+  --secondary-color: #e3f6f5;
+  --tertiary-color: #bae8e8;
+  --divide-border-color: #eee;
+  --hover-color: #2c8d9a;
+  --tag-blue: #e2f7ff;
+  --tag-yellow: #fef9bb;
+  --green: #05b876;
+  --darkgreen: #008e79;
+  --red: #ff583a;
+  --white: #fff;
+  --light-yellow: #fff9ec;
+  /*colorfordarkmode*/
+  --dark-background: #121212;
+  --dark-primary: #2b2b2b;
+  --dark-secondary: #2c2c2c;
+  --dark-tertiary: #333333;
+  --dark-fourth: #383838;
+  --dark-fifth: #272727;
+  --dark-text: #fff9ef;
+  --dark-highlight: #bae8e8;
+
+  --logo-font: 'Caveat Brush', cursive;
+  --title-font: 'Montserrat', sans-serif;
+  --sans: 'Hind', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--sans);
+  background-color: var(--main-color);
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h3,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+button:hover {
+  cursor: pointer;
+}

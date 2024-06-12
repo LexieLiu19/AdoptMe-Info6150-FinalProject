@@ -1,0 +1,46 @@
+.modal__form {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.modal__form-fields {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__form-fields input {
+  height: 2.2rem;
+  border-radius: 5px;
+  border: 1px solid var(--text-color);
+}
+
+.modal__form-fields textarea {
+  height: 4rem;
+  border-radius: 5px;
+  border: 1px solid var(--text-color);
+}
+.modal__form-buttons {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.modal__form-button {
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  color: #fff;
+}
+.modal__button-submit {
+  background-color: var(--green);
+}
+.modal__button-cancel {
+  background-color: var(--red);
+}
+
+.form__error {
+  color: red;
+}
